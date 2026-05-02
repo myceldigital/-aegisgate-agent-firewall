@@ -1,0 +1,22 @@
+name: test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  scanner-smoke-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Scan malicious email fixture
+        run: python scripts/scan_text.py --file tests/malicious-email.md || true
+      - name: Scan dangerous tool call fixture
+        run: python scripts/scan_tool_call.py --tool shell.exec --args '{"cmd":"rm -rf ~/.ssh"}' || true
+      - name: Scan outbound fixture
+        run: python scripts/scan_outbound.py --recipient external@example.com --body 'dummy token sk-test12345678901234567890' || true
+      - name: Scan repository as skill
+        run: python scripts/scan_skill.py --path . || true
