@@ -1,12 +1,38 @@
 [project]
 name = "aegisgate-agent-firewall"
 version = "1.0.0"
-description = "A defensive Agent Skill firewall for personal AI agents."
+description = "Personal AI agent firewall for prompt-injection defense, unsafe tool-call blocking, data-loss prevention, malicious skill detection, and memory-poisoning protection."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "Mycel Digital" }]
-keywords = ["ai-agent", "agent-skills", "security", "prompt-injection", "firewall", "red-team"]
+keywords = [
+  "ai-agent",
+  "agent-security",
+  "agent-firewall",
+  "prompt-injection",
+  "prompt-injection-defense",
+  "llm-security",
+  "ai-safety",
+  "agent-skills",
+  "hermes-agent",
+  "openclaw",
+  "tool-calling",
+  "data-loss-prevention",
+  "secret-scanning",
+  "memory-safety",
+  "malicious-skills",
+  "red-team",
+  "ai-red-team",
+  "cybersecurity",
+  "security-tools",
+  "python"
+]
+
+[project.urls]
+Homepage = "https://github.com/myceldigital/-aegisgate-agent-firewall"
+Repository = "https://github.com/myceldigital/-aegisgate-agent-firewall"
+Issues = "https://github.com/myceldigital/-aegisgate-agent-firewall/issues"
 
 [tool.pytest.ini_options]
 pythonpath = ["scripts"]
