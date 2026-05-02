@@ -1,0 +1,12 @@
+[project]
+name = "aegisgate-agent-firewall"
+version = "1.0.0"
+description = "A defensive Agent Skill firewall for personal AI agents."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Mycel Digital" }]
+keywords = ["ai-agent", "agent-skills", "security", "prompt-injection", "firewall", "red-team"]
+
+[tool.pytest.ini_options]
+pythonpath = ["scripts"]
