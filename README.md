@@ -1,14 +1,59 @@
 # AegisGate Agent Firewall
 
+**Open-source personal AI agent firewall for prompt-injection defense, unsafe tool-call blocking, secret-leak prevention, malicious skill detection, and memory-poisoning protection.**
+
 **AegisGate** is a defensive Agent Skill for personal AI agents. It acts as a runtime firewall between the user, untrusted content, the agent's reasoning process, tool calls, memory writes, outbound messages, shell commands, and skill installation.
 
-It is designed for personal-agent systems such as Hermes Agent, OpenClaw-style desktop agents, Claude/Codex/Cursor-style coding agents, and any Agent Skills-compatible runtime that can read a `SKILL.md` file and invoke helper scripts.
+It is designed for AI agent security, LLM red teaming, prompt-injection defense, tool-call governance, data-loss prevention, Agent Skills, Hermes Agent, OpenClaw-style personal assistants, Claude/Codex/Cursor-style coding agents, and any runtime that can read a `SKILL.md` file and invoke helper scripts.
 
 > Core principle: **protect user intent, privacy, credentials, files, money, memory, reputation, and devices.**
 
 ---
 
-## Why this exists
+## Recommended GitHub Topics
+
+Add these topics to the repository's GitHub **About** panel to make the project easier to discover:
+
+```text
+ai-agent
+agent-security
+agent-firewall
+prompt-injection
+prompt-injection-defense
+llm-security
+ai-safety
+agent-skills
+hermes-agent
+openclaw
+tool-calling
+data-loss-prevention
+secret-scanning
+memory-safety
+malicious-skills
+red-team
+ai-red-team
+cybersecurity
+security-tools
+python
+```
+
+Recommended repo description:
+
+```text
+Personal AI agent firewall for blocking prompt injection, unsafe tool calls, data exfiltration, malicious skills, and memory poisoning.
+```
+
+Recommended repo name:
+
+```text
+aegisgate-agent-firewall
+```
+
+If the repo currently has a leading hyphen, rename it from `-aegisgate-agent-firewall` to `aegisgate-agent-firewall` for better search, copy/paste, and CLI usability.
+
+---
+
+## What AegisGate protects against
 
 Personal AI agents increasingly read hostile content and act with user authority. They can read emails, browse websites, inspect files, edit repositories, install skills, run shell commands, create calendar events, send messages, and call APIs. This makes them vulnerable to:
 
@@ -25,6 +70,16 @@ Personal AI agents increasingly read hostile content and act with user authority
 - Sequential tool-chain attacks
 
 AegisGate is not just a content filter. It is a **user-intent enforcement layer**.
+
+---
+
+## Why this matters
+
+The next generation of personal AI assistants will not only answer questions. They will browse, install skills, run code, send messages, update calendars, access files, and delegate to subagents. That means the security problem moves from "is this text safe?" to:
+
+> Is this action faithful to the user's actual authorized intent?
+
+AegisGate is built around that question.
 
 ---
 
@@ -167,6 +222,33 @@ AegisGate postflight scan
   ↓
 Safe response, audit log, optional memory quarantine
 ```
+
+---
+
+## Search keywords
+
+AegisGate is relevant to:
+
+- AI agent firewall
+- personal AI agent security
+- LLM security
+- prompt-injection defense
+- indirect prompt injection
+- tool-call safety
+- tool-call governance
+- agentic AI security
+- AI red team tooling
+- LLM red team tooling
+- agent skills security
+- Hermes Agent skills
+- OpenClaw security
+- AI assistant data-loss prevention
+- memory poisoning defense
+- malicious skill detection
+- secret scanning for AI agents
+- agent runtime guardrails
+- model context security
+- reasoning-action mismatch detection
 
 ---
 
